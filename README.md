@@ -1,5 +1,5 @@
 # FTP-Socket-Programming
 
-**Jose Gonzalez
-asdfasd
-asdfasdf**
+**Jose Gonzalez**
+
+*Programming Language : Python*
