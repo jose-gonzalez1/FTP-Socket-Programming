@@ -1,6 +1,8 @@
 FTP-Socket-Programming 
 
-Jose Gonzalez
+Jose Gonzalez   jose.gonz@csu.fullerton.edu
+Rodney Muniz    rodmuniz1@csu.fullerton.edu
+Jasmine Santoro jasminesantoro@csu.fullerton.edu
 
 Programming Language : Python
 
