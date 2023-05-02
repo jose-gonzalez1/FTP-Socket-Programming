@@ -46,10 +46,10 @@ def get(filename):
             while bytes_sent < int(total_bytes): # Loop until total is sent
                 bytes_sent += data.send(msg[bytes_sent:])
 
-        print("get SUCCESS")                     # Print SUCCESS message 
+        print("\tget SUCCESS")                     # Print SUCCESS message 
     except:
         data.send(b"ERROR. File could not be opened.")
-        print("get FAILURE")
+        print("\tget FAILURE")
 
     # close data connection
     data.close()
@@ -65,7 +65,7 @@ def put(filename):
     msg = data.recv(1024).decode() # Receive client's message
 
     if msg[:5] == "ERROR":         # Print FAILURE if its an error message
-        print("put FAILURE")
+        print("\tput FAILURE")
     else:
         total_bytes = int(msg)     # Otherwise save total bytes message
         bytes_recv = 0              
@@ -78,7 +78,7 @@ def put(filename):
         newfile = open(filename, "w")       # Open file with given file name
         newfile.write(str)                  # Write into file received bytes
         newfile.close()                     # Close file
-        print("put SUCCESS")                # Print SUCCESS message
+        print("\tput SUCCESS")                # Print SUCCESS message
 
     # Close data connection
     data.close()
